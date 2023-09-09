@@ -42,6 +42,7 @@ export default function ProductHeader({
           <PSelect
             onSelect={(e) => {
               setFetchInterval(+e.target.value)
+              refresh()
             }}
             options={constant.TIME_INTERVAL_OPTIONS}
             value={fetchInterval}

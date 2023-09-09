@@ -29,7 +29,9 @@ export default function ProductList({
   })
 
   useEffect(() => {
-    if (refreshNow) refetch()
+    if (refreshNow) {
+      refetch()
+    }
     setRefreshNow(false)
 
     // eslint-disable-next-line
