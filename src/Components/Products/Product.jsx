@@ -5,5 +5,5 @@ export default function Product({ data, isError }) {
   if (isError) {
     return <Error />
   }
-  return data ? <PCard product={data} /> : null
+  return data ? <PCard product={data} type="details-page" /> : null
 }

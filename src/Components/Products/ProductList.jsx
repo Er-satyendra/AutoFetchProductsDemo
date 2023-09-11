@@ -47,7 +47,7 @@ export default function ProductList({
       {data?.length > 0 &&
         data.map((product) => (
           <div className="col-12 col-sm-6 col-md-4 pb-4" key={product.id}>
-            <PCard product={product} />
+            <PCard product={product} type="listing-page" />
           </div>
         ))}
     </div>

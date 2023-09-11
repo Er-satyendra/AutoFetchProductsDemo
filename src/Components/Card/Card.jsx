@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import { useNavigate } from 'react-router-dom'
 
-function PCard({ product }) {
+function PCard({ product, type }) {
   const { category, description, image, price, title, rating } = product
   const navigate = useNavigate()
 
@@ -19,8 +19,18 @@ function PCard({ product }) {
       />
       <Card.Body>
         <Card.Title className="text-primary">{category}</Card.Title>
-        <Card.Text className="text-truncate text-dark">{title}</Card.Text>
-        <Card.Text className="text-truncate text-secondary">
+        <Card.Text
+          className={`${
+            type === 'details-page' ? '' : 'text-truncate'
+          } text-dark`}
+        >
+          {title}
+        </Card.Text>
+        <Card.Text
+          className={`${
+            type === 'details-page' ? '' : 'text-truncate'
+          } text-secondary`}
+        >
           {description}
         </Card.Text>
         <Card.Text className="text-info">
