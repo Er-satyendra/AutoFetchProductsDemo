@@ -1,5 +1,5 @@
-import PCard from '@products/Components/Card/Card'
-import Error from '@products/Components/Error/Error'
+import PCard from '@products/Components/Card'
+import Error from '@products/Components/Error'
 
 export default function Product({ data, isError }) {
   if (isError) {

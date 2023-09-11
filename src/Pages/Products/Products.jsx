@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
-import ProductList from '@products/Components/Products'
-import ProductHeader from '@products/Components/Products/ProductHeader'
+import ProductList, { ProductHeader } from '@products/Components/Products'
 
 export default function Products() {
   const [fetchInterval, setFetchInterval] = useState(300000)

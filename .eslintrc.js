@@ -61,21 +61,6 @@ module.exports = {
       { allowExpressionValues: true },
     ],
     'jsx-a11y/click-events-have-key-events': 'error',
-    'react/jsx-props-no-spreading': [
-      'error',
-      {
-        html: 'ignore',
-        exceptions: [
-          'Outlet',
-          'Slider',
-          'Form.Control',
-          'TGButton',
-          'Menu',
-          'Form.Select',
-          'TablePagination',
-        ],
-      },
-    ],
     'import/no-unresolved': 'error',
     'react/require-default-props': 'error',
     'react/no-unescaped-entities': 'error',

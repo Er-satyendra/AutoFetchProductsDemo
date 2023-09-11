@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { Product } from '@products/Components/Products'
-import ProductHeader from '@products/Components/Products/ProductHeader'
+import { Product, ProductHeader } from '@products/Components/Products'
 import { useGetProducByIdQuery } from '@products/Store/Api/Product/productApi'
 import { setLoader } from '@products/Store/Slices/loaderSlice'
 
